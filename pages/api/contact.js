@@ -7,7 +7,7 @@ export default (req, res) => {
             name,
             email,
             text
-        } = req;
+        } = req.body;
 
         const transporter = nodemailer.createTransport({
             service: "gmail",
