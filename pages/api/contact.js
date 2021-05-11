@@ -1,12 +1,7 @@
 require("dotenv").config();
 const nodemailer = require("nodemailer");
-import Cors from 'cors'
 
 export default (req, res) => {
-    const cors = Cors({
-        methods: ['GET', 'HEAD', 'POST'],
-    })
-
     if (req.method === 'POST') {
         const {
             name,
