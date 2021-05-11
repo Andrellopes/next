@@ -22,17 +22,17 @@ export default (req, res) => {
             to: `${process.env.EMAIL}`,
             subject: `New mail from ${email}`,
             text: `
-        ${name} wrote:
-        ${text}
-        `,
+                  ${name} wrote:
+                  ${text}
+                  `,
         };
 
         transporter.sendMail(mailOption, (err, data) => {
             if (err) {
-                res.status(400).send("error" + JSON.stringify(err));
+                res.status(400).send("error : " + JSON.stringify(err));
             } else {
                 res.status(200).send("success");
             }
         });
     }
-}; 
+};
