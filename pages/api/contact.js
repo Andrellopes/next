@@ -31,7 +31,9 @@ export default (req, res) => {
             if (err) {
                 res.status(400).send("error : " + JSON.stringify(err));
             } else {
-                res.status(200).send("success" + req);
+                res.status(200).send("success" + req.name + ' ' 
+                                               + req.email + ' ' 
+                                               + req.text );
             }
         });
     }
