@@ -22,7 +22,7 @@
 
 ## Getting Started
 
-Visit <a aria-label="next.js learn" href="https://nextjs.org/learn">https://nextjs.org/learn</a> to get started with Next.js.
+Visit <a aria-label="next.js learn" href="https://nextjs.org/learn">https://nextjs.org/learn</a> to  get started with Next.js.
 
 ## Documentation
 
